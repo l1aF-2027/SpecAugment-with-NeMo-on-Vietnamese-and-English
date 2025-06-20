@@ -98,11 +98,16 @@ This approach not only improves the alignment between acoustic and linguistic re
 
 ```
 root/
-├── manifests/
-├── configs/
-├── scripts/
-├── checkpoints/
-├── logs/
+├── code/
+│   ├── en-code/
+│   │   ├── aug.ipynb
+│   │   ├── no-aug.ipynb
+│   │   └── next-train.ipynb
+│   ├── vie-code/
+│   │   ├── aug.ipynb
+│   │   ├── no-aug.ipynb
+│   │   └── train-fussion.ipynb
+├── slide and report/
 └── README.md
 ```
 
