@@ -1,5 +1,11 @@
 # 🗣️ SpecAugment with NeMo on Vietnamese and English
 
+## 🖼️ Demo 
+
+![image](https://github.com/user-attachments/assets/d08a17d7-41a4-49aa-bff1-150697c3cfaa)
+
+*Hình: Augment được áp dụng trên một đầu vào mẫu (ảnh trên cùng). Từ trên xuống dưới, ảnh thể hiện phổ log mel của đầu vào mẫu, time warp, frequency mask và time mask được áp dụng lần lượt.*
+
 ## 📘 Project Overview
 
 This project revisits and extends the work presented in:
@@ -118,4 +124,3 @@ root/
 3. LibriSpeech Dataset: [http://www.openslr.org/12/](http://www.openslr.org/12/)
 4. VIVOS Corpus: [https://ailab.hcmus.edu.vn/vivos](https://ailab.hcmus.edu.vn/vivos)
 
-Let me know if you want a Vietnamese version of this `README.md` as well or want to add badges, setup commands, or a `requirements.txt` section.
