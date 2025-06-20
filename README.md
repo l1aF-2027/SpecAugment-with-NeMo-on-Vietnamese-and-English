@@ -50,24 +50,7 @@ We used **QuartzNet 15x5**, a lightweight 1D convolutional end-to-end ASR model 
 
 For Vietnamese, we fine-tuned the pretrained `stt_en_quartznet15x5` model from NeMo.
 
-
-## 📊 Datasets
-
-| Dataset         | Language   | Training Hours | Test Hours |
-| --------------- | ---------- | -------------- | ---------- |
-| LibriSpeech-100 | English    | 100            | 5.4        |
-| VIVOS           | Vietnamese | \~15           | \~0.75     |
-
-## 🧪 Experiments & Results
-
-| Model              | No Fusion           |                    | With Fusion        |                    |
-|--------------------|---------------------|--------------------|--------------------|--------------------|
-|                    | LibreSpeech-100     | VIVOS              | LibreSpeech-100    | VIVOS              |
-| QuartzNet          | 0.1833              | 0.3006             | -                  | 0.2739             |
-| QuartzNet+SpecAug  | 0.1664              | 0.2723             | -                  | 0.2310             |
-
-
-## 🔁 Fusion Techniques
+### 🔁 Fusion Techniques
 
 We replaced **Shallow Fusion** with **Deep Fusion** to integrate the language model directly into training rather than only during decoding.
 
@@ -84,6 +67,21 @@ This design enables **end-to-end joint training** instead of relying on shallow 
 - The **streaming inference** support inherent in the RNN-T framework.
 
 This approach not only improves the alignment between acoustic and linguistic representations but also simplifies the deployment process by eliminating the need for external language model fusion during decoding.
+
+## 📊 Datasets
+
+| Dataset         | Language   | Training Hours | Test Hours |
+| --------------- | ---------- | -------------- | ---------- |
+| LibriSpeech-100 | English    | 100            | 5.4        |
+| VIVOS           | Vietnamese | \~15           | \~0.75     |
+
+## 🧪 Experiments & Results
+
+| Model              | No Fusion           |                    | With Fusion        |                    |
+|--------------------|---------------------|--------------------|--------------------|--------------------|
+|                    | LibreSpeech-100     | VIVOS              | LibreSpeech-100    | VIVOS              |
+| QuartzNet          | 0.1833              | 0.3006             | -                  | 0.2739             |
+| QuartzNet+SpecAug  | 0.1664              | 0.2723             | -                  | 0.2310             |
 
 
 ## 🔍 Observations
